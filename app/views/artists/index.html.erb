@@ -2,7 +2,7 @@
 <ul>
 <% @artists.each do |artist| %>
 <li><%= artist.name %></li>
-<li><%= artist.song_count if artist.songs %></li>
+<li><%= song_count if artist.songs %></li>
   <ul>
     <% artist.songs.each do |song| %>
     <li><%= song.title %>
