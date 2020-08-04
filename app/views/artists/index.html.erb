@@ -3,7 +3,7 @@
 <% @artists.each do |artist| %>
 <li><%= artist.name %></li>
   <ul>
-    <% @artist.songs.each do |song| %>
+    <% artist.songs.each do |song| %>
     <li><%= song.title %>
       <% end %>
     </ul>
